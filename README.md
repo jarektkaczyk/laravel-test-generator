@@ -32,8 +32,9 @@ php artisan vendor:publish --provider="Sofa\LaravelTestGenerator\LaravelTestGene
     * [x] generate new test classes
     * [x] bare happy path case
     * [x] bare failing path case
-    * [ ] parse requests and route binding and build setup for tests accordingly
-    * [ ] update existing test classes with new methods (non-trivial with `nette/php-generator`, find better way?)
+    * [ ] parse route model binding and build setup for tests accordingly
+    * [ ] (OPTIONAL) parse requests and build setup for tests accordingly - might be too complex in many cases
+    * [ ] (OPTIONAL) update existing test classes with new methods (not trivial with `nette/php-generator`, find better way?)
 - [x] support for different drivers
 - [ ] other drivers
 
