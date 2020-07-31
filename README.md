@@ -1,7 +1,7 @@
 # Laravel feature test generator
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/sofa/laravel-test-generator.svg?style=flat-square)](https://packagist.org/packages/jarektkaczyk/laravel-test-generator)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/jarektkaczyk/laravel-test-generator/run-tests?label=tests)](https://github.com/jarektkaczyk/laravel-test-generator/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/jarektkaczyk/laravel-test-generator/tests?label=tests)](https://github.com/jarektkaczyk/laravel-test-generator/actions?query=workflow%3Arun-tests+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/sofa/laravel-test-generator.svg?style=flat-square)](https://packagist.org/packages/jarektkaczyk/laravel-test-generator)
 
 
@@ -23,7 +23,7 @@ php artisan vendor:publish --provider="Sofa\LaravelTestGenerator\LaravelTestGene
 ## Usage
 
 ``` php
-
+php artisan generate:feature-tests
 ```
 
 ## Roadmap
@@ -36,7 +36,7 @@ php artisan vendor:publish --provider="Sofa\LaravelTestGenerator\LaravelTestGene
     * [ ] (OPTIONAL) parse requests and build setup for tests accordingly - might be too complex in many cases
     * [ ] (OPTIONAL) update existing test classes with new methods (not trivial with `nette/php-generator`, find better way?)
 - [x] support for different drivers
-- [ ] other drivers
+- [ ] (OPTIONAL) other drivers
 
 ## Testing
 
