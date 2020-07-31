@@ -1,7 +1,7 @@
 # Laravel feature test generator
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/sofa/laravel-test-generator.svg?style=flat-square)](https://packagist.org/packages/jarektkaczyk/laravel-test-generator)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/jarektkaczyk/laravel-test-generator/tests?label=tests)](https://github.com/jarektkaczyk/laravel-test-generator/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![GitHub Tests Action Status](https://github.com/jarektkaczyk/laravel-test-generator/workflows/Tests/badge.svg)](https://github.com/jarektkaczyk/laravel-test-generator/actions?query=workflow%3Atests+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/sofa/laravel-test-generator.svg?style=flat-square)](https://packagist.org/packages/jarektkaczyk/laravel-test-generator)
 
 
