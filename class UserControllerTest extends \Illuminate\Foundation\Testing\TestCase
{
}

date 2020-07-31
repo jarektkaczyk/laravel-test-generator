@@ -1,0 +1,3 @@
+class UserControllerTest extends \Illuminate\Foundation\Testing\TestCase
+{
+}

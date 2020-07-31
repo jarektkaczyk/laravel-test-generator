@@ -1,0 +1,104 @@
+<?php
+
+namespace LaravelTestGeneratorTests\Feature\Http\Controllers;
+
+use LaravelTestGeneratorTests\TestCase;
+
+class UserControllerTest extends TestCase
+{
+    /**
+     * @test
+     */
+    public function index()
+    {
+        $this->get('users')->assertStatus(200);
+    }
+
+    /**
+     * @test
+     */
+    public function create()
+    {
+        $this->get('users/create')->assertStatus(200);
+    }
+
+    /**
+     * @test
+     */
+    public function store()
+    {
+        $this->post('users', [/* valid payload here */])->assertStatus(201);
+    }
+
+    /**
+     * @test
+     */
+    public function store_failing()
+    {
+        $this->post('users', [/* invalid payload here */])->assertStatus(422);
+    }
+
+    /**
+     * @test
+     */
+    public function show()
+    {
+        $this->get('users/0')->assertStatus(200);
+    }
+
+    /**
+     * @test
+     */
+    public function show_failing()
+    {
+        $this->get('users/0')->assertStatus(404);
+    }
+
+    /**
+     * @test
+     */
+    public function edit()
+    {
+        $this->get('users/0/edit')->assertStatus(200);
+    }
+
+    /**
+     * @test
+     */
+    public function edit_failing()
+    {
+        $this->get('users/0/edit')->assertStatus(404);
+    }
+
+    /**
+     * @test
+     */
+    public function update()
+    {
+        $this->put('users/0', [/* valid payload here */])->assertStatus(200);
+    }
+
+    /**
+     * @test
+     */
+    public function update_failing()
+    {
+        $this->put('users/0', [/* invalid payload here */])->assertStatus(422);
+    }
+
+    /**
+     * @test
+     */
+    public function destroy()
+    {
+        $this->delete('users/0')->assertStatus(200);
+    }
+
+    /**
+     * @test
+     */
+    public function destroy_failing()
+    {
+        $this->delete('users/0')->assertStatus(404);
+    }
+}
